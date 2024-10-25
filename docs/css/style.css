@@ -1,5 +1,11 @@
 body {
     margin: 0px;
+}
+
+.mainbody {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(20, 20, 25);
     color: white;
+    height: 100vh;
 }

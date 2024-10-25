@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+}
+
+a {
+    color: slateblue;
+}
+
+.mainbody {
+    background-color: lightgray;
+    font-family: 'Comic Sans MS';
+    font-size: 1em;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh;
+    width: 100%;
+    font-size: 3vw;
+    color: azure;
+    text-shadow: 0.5vw 0 5px black;
+    margin-bottom: 5%;
+}
+
+img {
+    width: 100%;
+}
+
+#important {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 70vh;
+    background-color: rgb(22, 22, 22);
+    border: 0.2vw orangered solid;
+    box-shadow: 0 0 10px 3vw rgb(22, 22, 22);
+    background-image: url(..images/comicsans.png);
+}
+
+.mainbody {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    margin: 1%;
+    width: 98%;
+}
+
+#references {
+    margin-top: 15%;
+    padding: 0.5%;
+    border: 2px lightcoral solid;
+}
+
+
+@media only screen and (min-width: 75vh) {
+    #important {
+        width: 99%;
+        height: 100%;
+    }
+
+    #header {
+        height: 15vh;
+        font-size: 2.5vh;
+        text-shadow: 0.5vh 0 5px black;
+        margin-bottom: 5%;
+    }
+
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+  }
