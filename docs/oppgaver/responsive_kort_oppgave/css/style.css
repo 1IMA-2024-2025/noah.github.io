@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+}
+
+img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+      flex-direction: column;
+    }
+    .kort {
+        min-height: 800px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .kort{
+        max-width: fit-content;
+    }
+}
+
+.kort:hover {
+    background-color: lightgray;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.kort{
+    border: 1px solid black;
+    min-width: 300px;
+    min-height: 425px;
+    margin: 1%;
+    font-size: 1em;
+}
+
+.title{
+    text-align: center;
+}
