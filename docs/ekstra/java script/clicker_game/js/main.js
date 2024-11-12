@@ -143,9 +143,9 @@ function f1() {
     totalMoney = totalMoney + moneyPerSec;
     moneyAmount.innerHTML = totalMoney;
     tickspeed.innerHTML = moneyUpdateTimer;
-    if (moneyUpdateTimer <= 100) {
-        if (document.getElementById("superUpgrade1")) {
-            document.getElementById("superUpgrade1").remove();
+    if (moneyUpdateTimer <= 100) { //Checks if moneyUpdateTimer is less than or equal to 100
+        if (document.getElementById("superUpgrade1")) { //Checks if the Id exists
+            document.getElementById("superUpgrade1").remove(); //Removes the Id
         }
     }
 }
