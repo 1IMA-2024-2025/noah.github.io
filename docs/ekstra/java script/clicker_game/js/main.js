@@ -1,4 +1,6 @@
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 //Quick changes
 let clickPower = 1;
 let totalMoney = 0;
