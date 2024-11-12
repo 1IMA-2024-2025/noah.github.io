@@ -144,6 +144,8 @@ function f1() {
     moneyAmount.innerHTML = totalMoney;
     tickspeed.innerHTML = moneyUpdateTimer;
     if (moneyUpdateTimer <= 100) {
-        document.getElementById("superUpgrade1").remove();
+        if (document.getElementById("superUpgrade1")) {
+            document.getElementById("superUpgrade1").remove();
+        }
     }
 }
