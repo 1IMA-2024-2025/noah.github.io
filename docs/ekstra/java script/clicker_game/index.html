@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clicker Game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="ui">
+            <div id="discord" class="links" onclick="window.open('https://discord.com', '_blank').focus()">
+                <img src="images/discord-logo.png" title="Discord">
+                <p class="linkText">Discord</p>
+            </div>
+            <div id="youtube" class="links" onclick="window.open('https://youtube.com', '_blank').focus()">
+                <img src="images/youtube-logo.png" title="Youtube">
+                <p class="linkText">Youtube</p>
+            </div>
+        </div>
+        <div class="game">
+            <div class="maingame">
+                <div class="gameui">
+                    <div class="money">
+                        <h1 id="moneyAmount">Null</h2>
+                    </div>
+                    <div class="moneyPerSec">
+                        <h5 id="moneyAmountPerSec">Null</h5> <p>&nbsp;per tick</p>
+                    </div>
+                    <div class="tickspeed">
+                        <h5 id="tickspeed">Null</h5> <p>&nbsp;tps</p>
+                    </div>
+                </div>
+                <div class="clicker">
+                    <button type="button" id="clicker" onclick="clickerClicked()"></button>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="superUpgrades">
+                    <div id="superUpgrade1" class="SuperUpgrade">
+                        <button type="button" id="superUpgrade1Button" class="superUpgradeButton" onclick="superUpgrade1()" title="Lower tickspeed by 100 milliseconds every upgrade, capped at 100 tps"></button>
+                        <p id="superShop1Cost">Null</p>
+                    </div>
+                </div>
+
+                <div id="upgradeOne" class="upgrade">
+                    <button type="button" id="shop0" onclick="clickerUpgrade1()">Clicker Upgrade</button>
+                    <p id="shop0Cost">Null</p>
+                </div>
+                <div id="upgradeTwo" class="upgrade">
+                    <button type="button" id="shop1" onclick="autoUpgrade1()">Auto Upgrade 1</button>
+                    <p id="shop1Cost">Null</p>
+                </div>
+                <div id="upgradeTwo" class="upgrade">
+                    <button type="button" id="shop2" onclick="autoUpgrade2()">Auto Upgrade 2</button>
+                    <p id="shop2Cost">Null</p>
+                </div>
+                <div id="upgradeThree" class="upgrade">
+                    <button type="button" id="shop3" onclick="autoUpgrade3()">Auto Upgrade 3</button>
+                    <p id="shop3Cost">Null</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

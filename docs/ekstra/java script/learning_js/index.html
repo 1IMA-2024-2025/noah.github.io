@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learning JavaScript</title>
+    <!-- This is a function, it can be in the head or in the .js file -->
+    <script>
+        function functionOne() {
+            document.getElementById("function").innerHTML = "This is what this function changes.";
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <p id="p_tag"></p>
+        <p id="print"></p> <!-- this <p> tag has the id "print" and can be changed using document.getElementById("print") -->
+
+        <!-- The buttons are connected to a function and activates the function on click -->
+        <button type="button" onclick="functionOne()">This button is connected to an internal function.</button>
+        <br>
+        <button type="button" onclick="functionTwo()">This button is connected to an external function.</button>
+        <p id="function"></p>
+
+        <!-- This gives an alert in the browser with the content inside the () -->
+        <button type="button" onclick="alert(tmp2)">Alert button</button> <!-- The "tmp2" is from the .js file -->
+
+        <!-- This deletes every other loaded HTML and changes it to the content of the () -->
+        <button type="button" onclick="document.write('This is a changed web-page')">This is a document.write.</button>
+        Careful with the document.write! It changes the web-page and removes the buttons.
+        <br>
+        <br>
+        <!-- This connects to a function with an if else inside it -->
+        <button type="button" onclick="ifStatement()">This uses an if else function</button>
+
+
+        <!-- This links the HTML and JavaScript files together. It can be placed in either the body or head -->
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
