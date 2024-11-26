@@ -6,5 +6,3 @@ const getPFP = async () => {
 }
 
 getPFP();
-
-print()
