@@ -4,7 +4,8 @@ body {
 
 a {
     color: cornflowerblue;
-    font-size: 1.25em;
+    font-size: 1em;
+    text-decoration: none;
 }
 
 h1 {
