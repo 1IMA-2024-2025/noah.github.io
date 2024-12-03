@@ -1,3 +1,28 @@
 body {
     margin: 0px;
+    background-color: gainsboro;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: crimson;
+    transition: top 0.4s;
+}
+
+#navbar a {
+    display: block;
+    background-color: crimson;
+    color: black;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: maroon;
 }
