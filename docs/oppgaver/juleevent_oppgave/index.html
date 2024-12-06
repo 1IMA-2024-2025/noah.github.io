@@ -7,12 +7,44 @@
     <title>Juleevent AS</title>
 </head>
 <body>
-    <div class="mainbody">
-        <div id="navbar"> <!--Dette skal være en skjulbar menu som skjules når man skroller ned og vises når man skroller opp-->
-            <a href="#location">Lokale</a>
-            <a href="#ideer">Ideer?</a>
-            <a href="#settings">Innstillinger</a>
+    <div class="mainbody" id="darkMode">
+        <div class="content" id="viktig">
+
         </div>
+        <div class="content" id="nissetreff">
+
+        </div>
+        <div class="content">
+            
+        </div>
+        <div class="content">
+            
+        </div>
+        <div class="content">
+            
+        </div>
+    </div>
+
+    <div id="navbar">
+        
+        <div id="settings">
+            <button id="myButton">Settings</button>
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <p>Mørkemodus:</p>
+                    <label class="switch" id="checkbox">
+                        <input type="checkbox">
+                        <span class="slider round" onclick="darktoggle()"></span>
+                    </label>
+                    <button id="closePopup">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    <!--<a href="#location">Lokale</a>
+        <a href="#ideer">Ideer?</a>
+        <a href="#settings">Innstillinger</a>-->
     </div>
 
     <script src="js/main.js"></script>

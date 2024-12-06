@@ -12,3 +12,9 @@ Planlegging av oppsettet til nettsiden, både mobil og pc. Begynte med å progra
 
 ![sketch](images/Image.jpg)
 ![sketch](images/Image2.jpg)
+
+### Fredag 6 December 2024
+
+La til mørkemodus for de som ikke liker sterkt lys (endrer kun bakgrunnen for nå). Lagde en struktur for innhold og gjorde ferdig navigasjonsbaren (mangler fortsatt noe av innholdet).
+
+Alt av farger er midlertidig og vil endres i sluttproduktet.
