@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nissetreff</title>
+</head>
+<body>
+    <div class="mainbody" id="darkMode">
+        Velkommen til nissetreff!
+
+        <div id="navbar">
+            
+            <div id="settings">
+                <button id="home" onclick="home()"><img src="../../icons/house-fill.svg" alt="Home"></button>
+
+                <button id="myButton"><img src="../../icons/gear-fill.svg" alt="Settings"></button>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Mørkemodus:</p>
+                        <label class="switch" id="checkbox">
+                            <input type="checkbox" id="darkCheckbox">
+                            <span class="slider round" onclick="darktoggle()"></span>
+                        </label>
+                        <button id="closePopup">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <!--<a href="#location">Lokale</a>
+            <a href="#ideer">Ideer?</a>
+            <a href="#settings">Innstillinger</a>-->
+        </div>
+    </div>
+
+    <script src="../../js/darkmode.js"></script>
+    <script>
+        console.log(darkCurrent)
+        if (darkCurrent == true) {
+            darkMode.style.backgroundColor = "rgb(65, 65, 65)";
+            document.getElementById("darkCheckbox").checked = true;
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -11,16 +11,18 @@
         <div class="content" id="viktig">
 
         </div>
-        <div class="content" id="nissetreff">
-
+        <div class="content" id="nissetreff" onclick="nissetreff()">
+            <div class="nissetreff" id="content">
+                <h2>Nissetreff</h2>
+            </div>
         </div>
-        <div class="content">
+        <div class="content" id="" onclick="">
             
         </div>
-        <div class="content">
+        <div class="content" id="" onclick="">
             
         </div>
-        <div class="content">
+        <div class="content" id="" onclick="">
             
         </div>
     </div>
@@ -28,7 +30,7 @@
     <div id="navbar">
         
         <div id="settings">
-            <button id="myButton">Settings</button>
+            <button id="myButton"><img src="icons/gear-fill.svg" alt="Settings"></button>
             <div id="myPopup" class="popup">
                 <div class="popup-content">
                     <p>Mørkemodus:</p>
@@ -47,6 +49,12 @@
         <a href="#settings">Innstillinger</a>-->
     </div>
 
+    <script src="js/darkmode.js">
+        if (darkCurrent == true) {
+            darkMode.style.backgroundColor = "rgb(65, 65, 65)";
+            darkCurrent = true;
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
 
 //Navigasjons bar som skjules når man skroller
 var prevScrollpos = window.pageYOffset;
@@ -38,10 +37,6 @@ window.addEventListener(
     }
 );
 
-function nissetreff() {
-    window.location.replace("content/nissetreff/index.html");
+function home() {
+    window.location.replace("../../index.html");
 }
-
-//while (true) {
-
-//}
